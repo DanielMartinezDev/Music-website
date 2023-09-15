@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Martinez | My Gear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../resources/favicon_io/musical-notes-outline.svg">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../resources/logos/LOGO DANI 3 PNG.png" class="logo"></a>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <a href="../index.html"><img src="../resources/logos/LOGO DANI 3 PNG.png" class="logo"></a>
+           <ul>
+                <li> <a href="../index.html">Home</a> </li>
+                <li> <a href="my-gear-index.html">My gear</a> </li>
+                <li> <a href="../projects-page/projects-index.html">Projects</a> </li>
+                <li> <a href="../contact-page/contact-index.html">Contact</a> </li>
+            </ul>  
+        </nav>
+       
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+    <div class="profile-container projects-container" id="blur">
+        <div class="profile">
+          <img src="../resources/Helix3.JPG" class="main-pic" onclick="toggle()">
+          <h2>Line 6 Helix LT</h2>
+          <!-- <h3>Postdoc</h3> -->
+        </div>
+      
+        <div class="profile">
+          <img src="../resources/MacBook3.JPG" class="main-pic" onclick="toggle02()">
+          <h2>14" M2 Pro MacBook Pro</h2>
+          <!-- <h3>PhD</h3> -->
+        </div>
+      
+        <div class="profile">
+          <img src="../resources/Guitar3.JPG" class="main-pic" onclick="toggle03()">
+          <h2>Squier 52s Thinline Telecaster</h2>
+          <!-- <h3>MSc</h3> -->
+        </div>
+      
+        <div class="profile">
+          <img src="../resources/Beyerdynamic3.JPG" class="main-pic" onclick="toggle04()">
+          <h2>Beyerdynamic DT-770 <br> Pro 250 Ohm</h2>
+          <!-- <h3>MSc</h3> -->
+        </div>
+      
+        <div class="profile">
+          <img src="../resources/Strings3.JPG" class="main-pic" onclick="toggle05()">
+          <h2>Ernie Ball Power Slinky 11-48</h2>
+          <!-- <h3>Family</h3> -->
+        </div>
+      
+        <div class="profile">
+          <img src="../resources/cables3.JPG" class="main-pic" onclick="toggle06()">
+          <h2>Sommer Cable</h2>
+          <!-- <h3>Web Developers</h3> -->
+        </div>
+      </div>
+    
+      <div id="popup04">
+        <h3>In my role as a producer, the Beyerdynamic DT-770 Pro 250 Ohm headphones 
+          have become an indispensable tool in my studio setup. 
+          These headphones redefine precision and accuracy, enabling me to dissect every 
+          element of a track with unparalleled clarity. The meticulous comfort and isolation 
+          they provide allow me to focus entirely on the intricate details of production, 
+          ensuring that every instrument and sound is perfectly balanced. With their 250 Ohm impedance, 
+          these headphones offer an uncolored representation of the audio, making them my go-to choice 
+          for critical mixing and mastering sessions.</h3>
+        <a href="javascript:;" onclick="toggle04()" id="close">Close</a>
+      </div>
+    
+      <div id="popup02">
+        <h3>
+          From a producer's standpoint, the 14" M2 Pro MacBook Pro stands as an irreplaceable cornerstone 
+          of my production setup. Its fusion of cutting-edge power and sleek design redefines my workflow. 
+          The processing prowess of the M2 chip ensures that resource-intensive tasks like audio editing, 
+          virtual instrument processing, and mixing glide seamlessly.  
+          The portability of the MacBook Pro means my studio transcends physical boundaries, enabling me to capture 
+          inspiration on-the-go without compromising quality.</h3>
+        <a href="javascript:;" onclick="toggle02()" id="close">Close</a>
+      </div>
+    
+      <div id="popup03">
+        <h3>My Squier 52s Thinline Telecaster isn't just a guitar; it's an extension of my soul and a vessel for my emotions. 
+          This instrument holds an immense sentimental value that words can scarcely encapsulate.
+          The Thinline's warm yet articulate sound feels like a conversation between old friends, 
+          telling stories of highs and lows, joys and struggles. It's not merely a piece of wood and metal; 
+          it's a repository of memories and a conduit for expression. My Squier 52s Thinline Telecaster is a cherished companion, 
+          reminding me with every note that music is more than just sound – it's a journey through the heart and soul.</h3>
+        <a href="javascript:;" onclick="toggle03()" id="close">Close</a>
+      </div>
+    
+      <div id="popup">
+        <h3>As a guitarist, the Line 6 Helix LT holds an indispensable place in my rig. 
+          Its seamless fusion of cutting-edge technology and classic analog feel is a true marvel. 
+          The versatility it offers is unparalleled, giving me the freedom to effortlessly switch 
+          between a myriad of tones and effects without sacrificing an ounce of quality. 
+          The Helix LT's intuitive interface allows me to sculpt my sound with precision, 
+          while its extensive range of amp and cabinet simulations mirror the authentic tube amp experience. 
+          Whether I'm in the studio or rocking a stage, the Helix LT's reliability and portability make it an essential companion. 
+          It's not just a piece of gear.</h3>
+        <a href="javascript:;" onclick="toggle()" id="close">Close</a>
+      </div>
+    
+      <div id="popup05">
+        <h3>These strings strike an impeccable balance between strength and playability, 
+          delivering a harmonious blend of tension and responsiveness. 
+          The gauge, ranging from 11 to 48, grants me the freedom to explore diverse 
+          styles while maintaining a robust tone. Whether I'm delving into intricate 
+          fingerstyle patterns or unleashing aggressive bends and slides, 
+          these strings remain steadfast in their consistency and durability. 
+          The unmistakable clarity they offer, coupled with the capacity to 
+          effortlessly navigate between various genres, makes them an integral component of my sonic journey.</h3>
+        <a href="javascript:;" onclick="toggle05()" id="close">Close</a>
+      </div>
+    
+      <div id="popup06">
+        <h3>Sommer cables stand as an essential part of my sonic toolkit. 
+          The meticulous craftsmanship and innovative engineering behind 
+          Sommer cables ensure an unimpeded flow of my guitar's voice. 
+          With impeccable shielding and conductive properties, these cables preserve the nuances 
+          and harmonics of my playing, delivering a pristine signal from my instrument to the amplifier. 
+          The durability and reliability of Sommer cables make them the unsung heroes of my rig, 
+          withstanding the rigors of stage and studio alike.</h3>
+        <a href="javascript:;" onclick="toggle06()" id="close">Close</a>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+</html>

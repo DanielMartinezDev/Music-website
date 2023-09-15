@@ -1,0 +1,143 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 1;
+}
+
+header input {
+    visibility: hidden;
+}
+
+header nav {
+    text-align: right;
+}
+
+.logo {
+    max-width: 200px;
+    filter: invert(1);
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+nav .logo {
+    max-width: 280px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: none;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a{
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 30px;
+    color: #fdfdfd;
+    position: relative;
+    text-decoration: none;
+}
+
+header nav ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 3px;
+    width: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #fdfdfd;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #fdfdfd;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        z-index: 101;
+        background: #100C08;
+    }
+
+    header nav {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        width: 45%;
+        height: 100%;
+        text-align: center;
+        background: #100C08;
+        transition: 0.3s;
+        border-radius: 0 15px 15px 0;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        z-index: 200;
+    } 
+
+    header #nav_check:checked ~ nav {
+        left: 0; 
+    }
+
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        color: #fdfdfd;
+        margin: 30px 0;
+    }
+
+    nav .logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    header {
+        padding: 0 30px;
+    }
+
+    header nav {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 0 25px;
+    }
+
+    header nav {
+        width: 75%;
+    }
+    .logo {
+        width: 150px;
+    }
+}
